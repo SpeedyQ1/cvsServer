@@ -10,7 +10,7 @@ app.use(cors())
 
 mongoose
   .connect(
-    `mongodb+srv://saharyash:VebeRgxdhj7yu5IB@cluster0.kh9vraj.mongodb.net/?retryWrites=true&w=majority`,
+    process.env.MONGO,
     {}
   )
   .then(() => {

@@ -9,7 +9,6 @@ router.route("/addCv").patch(userController.createNewCv);
 router.route("/getCvs").post(userController.getCvsByToken);
 router.route("/editCv").patch(userController.editCv);
 router.route("/deleteCv").patch(userController.deleteCv);
-router.route("/awake").get(userController.keepAwake);
 
 
 
