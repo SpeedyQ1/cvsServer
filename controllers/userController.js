@@ -171,3 +171,12 @@ exports.deleteCv = async (req, res) => {
     res.status(504).json(err.message);
   }
 };
+
+exports.keepAwake = async (req, res) => {
+ 
+  try {
+    res.status(201).json("awake");
+  } catch (err){
+    res.status(504).json(err.message);
+  }
+};
